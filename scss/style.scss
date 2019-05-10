@@ -69,7 +69,18 @@ small {
         position: absolute;
         top: 5px;
         left: 100px;
-        color: #5C6AC4;
+        a {
+            text-decoration: none;
+            color: #5C6AC4;
+        }
+        @include mq(700px) {
+            position: static;
+            margin-top: -50px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
     .lnd-text {
         float: left;
@@ -159,6 +170,7 @@ small {
         position: relative;
         @include mq(700px) {
             width: 100%;
+            min-height: 0;
         }
         img {
             display: flex;

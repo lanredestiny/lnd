@@ -51,8 +51,17 @@ small {
 .lnd .lnd-logo {
   position: absolute;
   top: 5px;
-  left: 100px;
-  color: #5C6AC4; }
+  left: 100px; }
+  .lnd .lnd-logo a {
+    text-decoration: none;
+    color: #5C6AC4; }
+  @media screen and (max-width: 700px) {
+    .lnd .lnd-logo {
+      position: static;
+      margin-top: -50px; } }
+  .lnd .lnd-logo a {
+    text-decoration: none;
+    color: #fff; }
 .lnd .lnd-text {
   float: left;
   width: 50%; }
@@ -134,7 +143,8 @@ small {
   position: relative; }
   @media screen and (max-width: 700px) {
     .lnd .lnd-img {
-      width: 100%; } }
+      width: 100%;
+      min-height: 0; } }
   .lnd .lnd-img img {
     display: flex;
     width: 600px;
